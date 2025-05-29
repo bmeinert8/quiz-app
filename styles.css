@@ -2,6 +2,8 @@
 /*         CSS Variables for Colors       */
 /******************************************/
 :root {
+  /* Color Palette */
+
   --White: #ffffff;
   --Black: #000000;
   --Grey500: #626c7f;
@@ -20,8 +22,21 @@
   --Orange400: #ff7e35;
   --Orange50: #fff5ed;
   --Red500: #ee5454;
-}
 
+  /* Spacing Variables */
+
+  --Spacing-8px: 0.5rem;
+  --Spacing-16px: 1rem;
+  --Spacing-24px: 1.5rem;
+  --Spacing-32px: 2rem;
+  --Spacing-40px: 2.5rem;
+  --Spacing-48px: 3rem;
+  --Spacing-64px: 4rem;
+  --Spacing-128px: 8rem;
+  --Spacing-144px: 9rem;
+  --Spacing-184px: 11.5rem;
+  
+}
 /******************************************/
 /*                CSS Reset               */
 /******************************************/
