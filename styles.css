@@ -120,6 +120,9 @@ html {
 body {
   min-height: 100vh;
   font-family: 'Rubik', sans-serif;
+  background: var(--Grey50) url(./images/pattern-background-mobile-light.svg)
+    no-repeat;
+  background-size: cover;
 }
 
 /******************************************/
