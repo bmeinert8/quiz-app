@@ -1,0 +1,157 @@
+/******************************************/
+/*         CSS Variables for Colors       */
+/******************************************/
+:root {
+  --White: #ffffff;
+  --Black: #000000;
+  --Grey500: #626c7f;
+  --Grey50: #f4f6fa;
+  --Blue950: #2d3949;
+  --Blue900: #313e51;
+  --Blue850: #3b4d66;
+  --Blue500: #306aff;
+  --Blue300: #abc1e1;
+  --Blue100: #edf1f9;
+  --Blue50: #ebf0ff;
+  --Green500: #2fd887;
+  --Green100: #e0fdef;
+  --Purple600: #a729f5;
+  --Purple100: #f6e7ff;
+  --Orange400: #ff7e35;
+  --Orange50: #fff5ed;
+  --Red500: #ee5454;
+}
+
+/******************************************/
+/*                CSS Reset               */
+/******************************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Ensure images are responsive and don't exceed their container */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset buttons to avoid inconsistent styling */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  appearance: none;
+}
+
+/* Ensure form elements don't overflow */
+input,
+textarea {
+  width: 100%;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Set base font and line height */
+html {
+  font-size: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outlines for better accessibility control */
+:focus {
+  outline: none;
+}
+
+/* Ensure body takes up at least full viewport height */
+body {
+  min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+}
+
+/******************************************/
+/*               Typography               */
+/******************************************/
+
+/* Preset text clases are set for mobile, adjust as needed for larger screens */
+.text-preset-1 {
+  font-size: 88px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-medium {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-light {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.text-preset-5 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
