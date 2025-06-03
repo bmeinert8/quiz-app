@@ -347,6 +347,7 @@ main {
   gap: var(--Spacing-40px);
   padding: var(--Spacing-32px) var(--Spacing-24px);
   height: 740px;
+  display: none;v
 }
 
 .question-container,
@@ -383,7 +384,7 @@ main {
   color: var(--Grey500);
 }
 
-.submit-btn {
+.submit-btn, .play-again-btn {
   width: 100%;
   padding: var(--Spacing-16px);
   background-color: var(--Purple600);
@@ -393,6 +394,68 @@ main {
 
 .submit-btn:hover {
   transform: scale(1.02);
+  box-shadow: 0 4px 8px var(--Purple600);
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+
+.answer-btn:hover .answer {
+  background-color: var(--Purple600);
+}
+
+.answer-btn:hover .answer-icon {
+  color: var(--White);
+}
+
+.answer-btn-selected {
+  outline: var(--Purple600) solid 2px;
+}
+
+/******************************************/
+/*               Quiz Results             */
+/******************************************/
+.results-section {
+  display:flex;
+  flex-direction: column;
+  gap: var(--Spacing-40px);
+  padding: var(--Spacing-32px) var(--Spacing-24px) 0px;
+}
+
+.results-title-container, .results-score-container, .subject-container, .score-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.results-title-container {
+  gap: var(--Spacing-8px);
+}
+
+.results-score-container {
+  gap: var(--Spacing-16px);
+}
+
+.subject-container {
+  gap: var(--Spacing-16px);
+  background-color: var(--White);
+  padding: var(--Spacing-32px);
+  border-radius: 12px;
+}
+
+.subject-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Spacing-16px);
+}
+
+.score-container {
+  align-items: center;
+  justify-content: center;
+  gap: var(--Spacing-16px);;
+}
+
+.play-again-btn:hover {
+   transform: scale(1.02);
   box-shadow: 0 4px 8px var(--Purple600);
   transition: 0.3s ease-in-out all;
   cursor: pointer;
