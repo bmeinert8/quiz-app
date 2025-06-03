@@ -20,7 +20,19 @@
   <body>
     <!-- Header Section for theme toggle -->
     <header>
-      <div class="style-container"></div>
+      <div class="quiz-type-container">
+        <!-- To be dynamically rendered by JS
+        <div class="image-container accessibility">
+          <img
+            src="images/icon-accessibility.svg"
+            alt="html icon"
+            class="subject-icon"
+          />
+        </div>
+        <p class="text-preset-4">Accessibility</p>
+        -->
+      </div>
+
       <div class="toggle-container">
         <img
           src="./images/icon-sun-dark.svg"
@@ -39,16 +51,16 @@
       </div>
     </header>
 
-    <!-- Main content area for the quiz app -->
+    <!-- Main content area for the quiz app menu -->
     <main>
-      <section class="header-container">
+      <article class="header-container">
         <div class="title-container">
           <h2 class="text-preset-2-light">Welcome to the</h2>
           <h1 class="text-preset-2">Frontend Quiz!</h1>
         </div>
         <p class="text-preset-5">Pick a subject to get started</p>
-      </section>
-      <section class="subject-container">
+      </article>
+      <article class="subject-container">
         <div class="quiz-button">
           <div class="image-container html">
             <img
@@ -89,8 +101,22 @@
           </div>
           <p class="text-preset-4">Accessibility</p>
         </div>
-      </section>
+      </article>
     </main>
+
+    <!-- Quiz Questions-->
+    <section class="questions-section">
+      <article class="question-contianer">
+        <div class="question-text-container">
+          <h2 class="question-number text-preset-5">Question 6 of 10</h2>
+          <p class="question-text text-preset-3">
+            Which of these color contrast ratios defines the minimum WCAG 2.1
+            Level AA requirement for normal text?
+          </p>
+        </div>
+        <progress class="progress-bar" value="6" max="10"></progress>
+      </article>
+    </section>
 
     <script src="main.js" defer></script>
   </body>
