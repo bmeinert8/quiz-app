@@ -1,27 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Brian J Meinert">
-  <meta name="description" content="A solution to a frontend quiz app challenge where users can answer questions and see results on four different frontend quizes.">
-  <title>Frontend Quiz App</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Header Section for theme toggle -->
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brian J Meinert" />
+    <meta
+      name="description"
+      content="A solution to a frontend quiz app challenge where users can answer questions and see results on four different frontend quizes."
+    />
+    <title>Frontend Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section for theme toggle -->
+    <header>
+      <div class="quiz-type-container">
+        <!-- To be dynamically rendered by JS
+        <div class="image-container accessibility">
+          <img
+            src="images/icon-accessibility.svg"
+            alt="html icon"
+            class="subject-icon"
+          />
+        </div>
+        <p class="text-preset-4">Accessibility</p>
+        -->
+      </div>
 
-  </header>
+      <div class="toggle-container">
+        <img
+          src="./images/icon-sun-dark.svg"
+          alt="sun icon"
+          class="theme-icon"
+        />
+        <label for="dark-mode" class="switch">
+          <input type="checkbox" id="dark-mode" />
+          <span class="slider round"></span>
+        </label>
+        <img
+          src="./images/icon-moon-dark.svg"
+          alt="moon icon"
+          class="theme-icon"
+        />
+      </div>
+    </header>
 
-  <!-- Main content area for the quiz app -->
-  <main>
+    <!-- Main content area for the quiz app menu -->
+    <main>
+      <article class="header-container">
+        <div class="title-container">
+          <h2 class="text-preset-2-light">Welcome to the</h2>
+          <h1 class="text-preset-2">Frontend Quiz!</h1>
+        </div>
+        <p class="text-preset-5">Pick a subject to get started</p>
+      </article>
+      <article class="subject-container">
+        <div class="quiz-button">
+          <div class="image-container html">
+            <img
+              src="images/icon-html.svg"
+              alt="html icon"
+              class="subject-icon"
+            />
+          </div>
+          <p class="text-preset-4">HTML</p>
+        </div>
+        <div class="quiz-button">
+          <div class="image-container css">
+            <img
+              src="images/icon-css.svg"
+              alt="html icon"
+              class="subject-icon"
+            />
+          </div>
+          <p class="text-preset-4">CSS</p>
+        </div>
+        <div class="quiz-button">
+          <div class="image-container javascript">
+            <img
+              src="images/icon-js.svg"
+              alt="html icon"
+              class="subject-icon"
+            />
+          </div>
+          <p class="text-preset-4">Javascript</p>
+        </div>
+        <div class="quiz-button">
+          <div class="image-container accessibility">
+            <img
+              src="images/icon-accessibility.svg"
+              alt="html icon"
+              class="subject-icon"
+            />
+          </div>
+          <p class="text-preset-4">Accessibility</p>
+        </div>
+      </article>
+    </main>
 
-  </main>
+    <!-- Quiz Questions-->
+    <section class="questions-section">
+      <article class="question-contianer">
+        <div class="question-text-container">
+          <h2 class="question-number text-preset-5">Question 6 of 10</h2>
+          <p class="question-text text-preset-3">
+            Which of these color contrast ratios defines the minimum WCAG 2.1
+            Level AA requirement for normal text?
+          </p>
+        </div>
+        <progress class="progress-bar" value="6" max="10"></progress>
+      </article>
+      <article class="answer-options-container">
+        <div class="quiz-button answer-btn">
+          <div class="image-container answer">
+            <p class="text-preset-4 answer-icon">A</p>
+          </div>
+          <p class="text-preset-4">4.5 : 1</p>
+        </div>
+        <div class="quiz-button answer-btn">
+          <div class="image-container answer">
+            <p class="text-preset-4 answer-icon">B</p>
+          </div>
+          <p class="text-preset-4">3 : 1</p>
+        </div>
+        <div class="quiz-button answer-btn">
+          <div class="image-container answer">
+            <p class="text-preset-4 answer-icon">C</p>
+          </div>
+          <p class="text-preset-4">2.5 : 1</p>
+        </div>
+        <div class="quiz-button answer-btn answer-btn-selected">
+          <div class="image-container answer">
+            <p class="text-preset-4 answer-icon">D</p>
+          </div>
+          <p class="text-preset-4">5 : 1</p>
+        </div>
+        <button class="submit-btn text-preset-4">Submit Answer</button>
+      </article>
+    </section>
 
-  <script src="main.js" defer></script>
-</body>
+    <!-- Results Section -->
+    <section class="results-section">
+      <article class="results-title-container">
+        <p class="text-preset-2-light">Quiz Completed</p>
+        <p class="text-preset-2">You Scored...</p>
+      </article>
+      <article class="results-score-container">
+        <div class="subject-score-container">
+          <div class="subject-info">
+            <div class="image-container accessibility">
+              <img
+                src="images/icon-accessibility.svg"
+                alt="html icon"
+                class="subject-icon"
+              />
+            </div>
+            <p class="text-preset-4">Accessibility</p>
+          </div>
+          <div class="score-container">
+            <p class="text-preset-1">8</p>
+            <p class="text-preset-4">out of 10</p>
+          </div>
+        </div>
+        <button class="play-again-btn text-preset-4">Play Again</button>
+      </article>
+    </section>
+
+    <script src="main.js" defer></script>
+  </body>
 </html>
