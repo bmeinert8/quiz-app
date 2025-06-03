@@ -338,6 +338,9 @@ main {
 /******************************************/
 /*             Quiz Questions             */
 /******************************************/
+
+/* Quiz header section */
+
 .questions-section {
   display: flex;
   flex-direction: column;
@@ -347,7 +350,8 @@ main {
 }
 
 .question-container,
-.question-text-container {
+.question-text-container,
+.answer-options-container {
   display: flex;
   flex-direction: column;
 }
@@ -363,6 +367,35 @@ main {
 .progress-bar {
   width: 100%;
   margin-top: var(--Spacing-24px);
+}
+
+/* Quiz answers section */
+
+.answer-options-container {
+  gap: var(--Spacing-16px);
+}
+
+.answer {
+  background-color: var(--Grey50);
+}
+
+.answer-icon {
+  color: var(--Grey500);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: var(--Spacing-16px);
+  background-color: var(--Purple600);
+  color: var(--White);
+  border-radius: 12px;
+}
+
+.submit-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px var(--Purple600);
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
 }
 
 /******************************************/
